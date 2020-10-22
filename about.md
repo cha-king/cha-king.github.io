@@ -8,9 +8,9 @@ permalink: /about/
 I'm a Software Engineer based in the San Francisco Bay Area and have spent the last
 three odd years working to revolutionize agriculture with the Internet of Things.
 
-I've always found modern technology to be the closest thing
-mankind has to real magic and have been taking things apart to learn what makes
-them tick for as long as I can remember.
+My first foray into software development was in high school working with Max/MSP and
+Arduino microcontrollers to integrate all sorts of hardware controllers and sensors with Ableton Live for
+music performance and production. Once running with that, I never really stopped!
 
 In 2017, I received my Bachelor of Science in Electrical and Computer Engineering
 from the University of Colorado with an emphasis in Digital Signal Processing.
