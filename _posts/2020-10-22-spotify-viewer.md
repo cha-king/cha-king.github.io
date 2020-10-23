@@ -89,7 +89,7 @@ Enter the [Spotify Library Viewer](https://library.cha-king.com)
     <img src='/assets/images/spotify-viewer/app.png' height=550>
 </div>
 <br>
-Available at <https://library.cha-king.com>, the app is intentionally as simple as could be.
+Available at [library.cha-king.com](https://library.cha-king.com), the app is intentionally as simple as could be.
 You authenticate with Spotify and are then immediately taken to a basic two-page view, where you can
 browse your entire Spotify library of 'liked' albums by artist and then album. When you select an
 album, Spotify opens to the selected album on your device.
