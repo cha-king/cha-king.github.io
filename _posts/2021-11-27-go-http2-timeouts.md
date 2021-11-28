@@ -18,7 +18,32 @@ documentation, and forget to set these values properly, leading to plenty of art
 
 Until recently, I liked to think that I was on top of this and was doing my due diligence to handle HTTP timeouts properly. Turns out, I was wrong! It also turns out that several others have made the same mistakes I did, so I figured I'd do a quick write-up on the matter.
 
-But first, a bit of context on my part..
+If you'd rather skip the reading and just see the fix though, check out the TL;DR below:
+
+<details>
+<summary><b>TL;DR</b></summary>
+
+<p>
+Go's HTTP client doesn't utilize HTTP/2 PING timeouts by default.
+<br>
+<br>
+In order to use it, use the transport from the external <code>http2</code> library as seen below:
+</p>
+
+<pre>
+<code class="go">
+httpClient := &http.Client{
+    Timeout: 10 * time.Second,
+    Transport: &http2.Transport{
+        ReadIdleTimeout: 10 * time.Second,
+        PingTimeout:     10 * time.Second,
+    },
+}
+</code>
+</pre>
+
+</details>
+<br>
 
 # Background
 For a project I'm currently working on, I'm working with devices in a relatively unstable network environment. In the event that
