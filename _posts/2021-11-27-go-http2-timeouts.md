@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Improving HTTP timeouts in Golang"
+title: "Fixing HTTP timeouts in Golang"
 tags: golang go http http2
 ---
 
